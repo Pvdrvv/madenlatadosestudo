@@ -9,29 +9,33 @@ body{
 
 
 .hero{
-  width:100%;
+width:100%;
 }
 
+
 .hero-img{
-  width:100%;
-  height:auto;
-  display:block;
+width:100%;
+height:auto;
+display:block;
 }
+
+
 
 @media (max-width: 768px) {
   .hero-img {
     min-height: 79vh; 
-    object-fit: cover; 
-    object-position: center; 
-  }
+    object-fit: cover;
+    object-position: center;
 }
+
 
 
 .wall{
 
   position:relative;
   width:100%;
-  height:100vh;
+  height:auto;
+  min-height:100vh;
 
   background-image:url("/images/mad1.png");
   background-size:cover;
@@ -41,6 +45,11 @@ body{
 
 }
 
+@media (max-width:768px){
+.wall{
+min-height:60vh;
+}
+}
 
 .trail-img{
 
@@ -61,9 +70,23 @@ body{
 
 .lookbook{
   width:100%;
-  height:600px;
+  height:auto;
+  min-height:100vh;
   overflow:hidden;
   background:#000000;
+}
+
+@media (max-width:768px){
+
+.hero{
+  height:auto;
+}
+
+.hero-img{
+  max-height:60vh;
+  object-fit:cover;
+}
+
 }
 
 .lookbook-track{
@@ -118,16 +141,6 @@ line-height:1.8;
   margin-bottom:5px;
 }
 
-@media (max-width:768px){
-
-.manifesto{
-  width:100%;
-}
-
-.manifesto p{
-  font-size:8px;
-  line-height:1.4;
-  margin-bottom:5px;
 }
 
 .manifesto p{
@@ -213,6 +226,83 @@ width:80%;
 position: center;
 margin:0 auto;
 
+}
+@media (max-width: 768px) {
+  .computer-image {
+    display: none !important;
+  }
+
+  .computer-section {
+    padding: 20px 0 !important;
+  }
+
+  .computer-wrapper {
+    width: 95% !important;
+    margin: 0 auto !important;
+  }
+
+  .screen {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 1vh;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+ .interface {
+    position: relative !important;
+    z-index: 2 !important; 
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 15px !important;
+    background: transparent !important;
+  }
+  
+ .screen-bg {
+    display: none !important;
+  }
+
+  .sidebar {
+    width: 100% !important;
+    border: 1px solid white !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    padding: 10px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .sidebar p {
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+  }
+
+  .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    z-index: 4 !important;
+  }
+
+  .gallery img {
+    width: 100% !important;
+    height: auto !important;
+    border: 1px solid #ff0000 !important;
+  }
+
+ 
+  .header {
+    order: 3 !important;
+    margin-top: 20px !important;
+    text-align: center;
+  }
 }
 
 .computer-image{
@@ -479,48 +569,6 @@ background:#9e0707;
 }
 
 @media (max-width: 768px) {
-  .plate-section {
-    padding: 60px 0;
-  }
-
-  .plate-text {
-    font-size: 4.5vw;
-    margin-bottom: 20px;
-    padding: 0 15px;
-  }
-
-  .plate-wrapper {
-    width: 95%;
-  }
-
-  .plate-image {
-    width: 100%;
-  }
-
-  .plate-form {
-    width: 80%;
-    height: 40px;
-  }
-
-  .plate-form input {
-    flex: 3;
-    padding: 0 15px;
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .plate-form button {
-    flex: 1;
-    padding: 0 10px;
-    font-size: 12px;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
 
 .hero{
 height:80vh;
@@ -573,6 +621,48 @@ width:180px;
 
 }
 
+@media (max-width: 768px) {
+  .plate-section {
+    padding: 60px 0;
+  }
+
+  .plate-text {
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .plate-wrapper {
+    width: 95%;
+  }
+
+  .plate-image {
+    width: 100%;
+  }
+
+  .plate-form {
+    width: 80%;
+    height: 40px;
+  }
+
+  .plate-form input {
+    flex: 3;
+    padding: 0 15px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .plate-form button {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .lookbook{
 
 position:relative;
@@ -611,7 +701,7 @@ pointer-events:none;
 }
 
 section{
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 @media (max-width:768px){
@@ -631,3 +721,4 @@ overflow-x:hidden;
 body{
 cursor:url("/cursor.png"), auto;
 }
+
