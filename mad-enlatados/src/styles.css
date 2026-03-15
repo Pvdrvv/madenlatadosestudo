@@ -455,6 +455,48 @@ background:#9e0707;
 }
 
 @media (max-width: 768px) {
+  .plate-section {
+    padding: 60px 0;
+  }
+
+  .plate-text {
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .plate-wrapper {
+    width: 95%;
+  }
+
+  .plate-image {
+    width: 100%;
+  }
+
+  .plate-form {
+    width: 80%;
+    height: 40px;
+  }
+
+  .plate-form input {
+    flex: 3;
+    padding: 0 15px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .plate-form button {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
 
 .hero{
 height:80vh;
