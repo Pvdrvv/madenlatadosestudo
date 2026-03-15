@@ -1,0 +1,559 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:black;
+}
+
+
+.hero{
+  width:100%;
+}
+
+.hero-img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+.wall{
+
+  position:relative;
+  width:100%;
+  height:100vh;
+
+  background-image:url("/images/mad1.png");
+  background-size:cover;
+  background-position:center;
+
+  overflow:hidden;
+
+}
+
+
+.trail-img{
+
+  position:absolute;
+
+  width:180px;
+  height:280px;
+
+  object-fit:cover;
+
+  transform:translate(-50%, -50%);
+
+  pointer-events:none;
+
+  border-radius:1px;
+
+}
+
+.lookbook{
+  width:100%;
+  height:600px;
+  overflow:hidden;
+  background:#000000;
+}
+
+.lookbook-track{
+  display:flex;
+  height:100%;
+  overflow-x:scroll;
+  scrollbar-width:none;
+}
+
+.lookbook-track::-webkit-scrollbar{
+  display:none;
+}
+
+.lookbook-track img{
+  height:100%;
+  width:auto;
+  margin-right:15px;
+  object-fit:cover;
+}
+
+.manifesto-section{
+
+width:85%;
+padding:200px 0;
+
+background:black;
+
+display:flex;
+justify-content:center;
+
+}
+
+.manifesto{
+
+width:75%;
+
+font-family:monospace;
+
+line-height:1.8;
+
+}
+
+.manifesto p{
+
+margin-bottom:30px;
+
+font-size:22px;
+
+}
+
+
+.type{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+width:0;
+
+border-right:2px solid white;
+
+}
+
+.typing{
+
+animation:typing 5s steps(60,end) forwards,
+          blink 0.8s infinite;
+
+}
+
+@keyframes typing{
+
+from{width:0}
+to{width:120%}
+
+}
+
+@keyframes blink{
+
+0%{border-color:white}
+50%{border-color:transparent}
+100%{border-color:white}
+
+}
+
+
+
+.green{
+
+color:#00ff00;
+text-shadow:0 0 6px #00ff00;
+
+}
+
+.red{
+
+color:#ff0000;
+text-shadow:0 0 6px #ff0000;
+
+}
+
+.yellow{
+
+color:#ffd000;
+text-shadow:0 0 6px #ffd000;
+
+}
+
+
+
+.computer-section{
+
+width:100%;
+background:#000000;
+
+}
+
+
+.computer-wrapper{
+
+position:relative;
+width:80%;
+position: center;
+margin:0 auto;
+
+}
+
+.computer-image{
+
+width:100%;
+display:block;
+
+}
+
+
+.screen{
+
+position:absolute;
+
+top:7.2%;
+left:13.1%;
+
+width:78.8%;
+height:47.4%;
+
+overflow: hidden;
+
+}
+
+.screen-bg{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:url("/public/images/x/gifmad.gif");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+filter:grayscale(100%) brightness(0.6);
+
+z-index:0;
+
+}
+
+
+.interface{
+position:relative;
+width:80%;
+height:90%;
+
+z-index: 2;
+
+display:flex;
+
+padding:1vw;
+
+box-sizing:border-box;
+
+font-family:'Courier New', Courier, monospace;
+
+color:white;
+
+
+}
+
+
+.sidebar{
+
+width:18%;
+
+border:1px solid white;
+
+padding:1vw;
+background-color: #000000;
+
+}
+
+.sidebar p{
+
+margin-bottom:1vw;
+
+cursor:pointer;
+
+
+}
+
+.sidebar p:hover{
+
+color:#ff0000;
+
+}
+
+
+.content{
+
+flex:1;
+
+padding-left:4vw;
+flex-direction:column;
+
+}
+
+
+.header{
+
+margin-bottom:3vw;
+
+}
+
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(3, 170px);
+grid-template-rows:repeat(3,1fr);
+
+
+
+gap:5vw;
+
+margin-top:1vw;
+margin-left:8vw;
+
+align-self:flex-start;
+
+width:130%;
+height: 60%;
+
+}
+
+.gallery img{
+
+width:120%;
+
+height:200px;  
+
+object-fit:cover;
+
+border:1px solid rgb(255, 0, 0);
+
+
+
+}
+
+
+.plate-section{
+
+width:100%;
+
+background:black;
+
+display:flex;
+flex-direction:column;
+align-items:center;  
+justify-content:center;
+
+padding:120px 0;
+
+}
+
+
+
+.plate-text{
+
+color:white;
+
+font-family:courier;
+
+font-size:1.6vw;
+
+letter-spacing:0.25em;
+
+text-align:center;
+
+}
+
+
+
+.plate-wrapper{
+
+position:relative;
+
+width:80%;
+
+display:flex;
+justify-content:center;
+
+}
+
+
+
+.plate-image{
+
+width:70%;
+position: center ;
+
+
+display:block;
+
+}
+
+
+
+.plate-form{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+display:flex;
+
+border:2px solid rgb(218, 25, 25);
+
+
+}
+
+
+
+.plate-form input{
+
+background:black;
+
+border:none;
+
+color:rgb(63, 194, 23);
+
+padding:15px 100px;
+
+font-family:courier;
+
+outline:none;
+
+}
+
+
+
+.plate-form button{
+
+background:rgb(255, 255, 255);
+
+border:none;
+
+padding:12px 20px;
+
+font-family:monospace;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+
+.plate-form button:hover{
+
+background:#9e0707;
+
+}
+
+@media (max-width: 768px) {
+
+.hero{
+height:80vh;
+}
+
+.lookbook{
+flex-direction:column;
+}
+
+.lookbook img{
+width:100%;
+}
+
+.manifesto{
+padding:40px 20px;
+font-size:14px;
+}
+
+.computer-section{
+
+padding:60px 0;
+
+}
+
+.notebook{
+
+width:95%;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:10px;
+
+}
+
+.plate-wrapper{
+
+width:95%;
+
+}
+
+.plate-form input{
+
+width:180px;
+
+}
+
+}
+
+.lookbook{
+
+position:relative;
+
+height:100vh;
+
+overflow:hidden;
+
+cursor:ew-resize;
+
+background:black;
+
+}
+
+
+
+.lookbook-label{
+
+position:absolute;
+
+top:10px;
+left:40px;
+
+color:rgb(0, 0, 0);
+
+font-family:monospace;
+
+font-size:20px;
+
+letter-spacing:0.35em;
+
+z-index:100;
+
+pointer-events:none;
+
+}
+
+section{
+  margin-bottom: 15px;
+}
+
+@media (max-width:768px){
+
+.lookbook-track{
+
+overflow-x:scroll;
+
+}
+
+}
+
+html,body{
+overflow-x:hidden;
+}
+
+body{
+cursor:url("/cursor.png"), auto;
+}
