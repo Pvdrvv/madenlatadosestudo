@@ -69,6 +69,16 @@ min-height:60vh;
 
 }
 
+@media (max-width: 768px) {
+  .trail-img {
+    
+    width: 80px !important;  
+    height: 120px !important;
+    
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
 .lookbook{
   width:100%;
   height:auto;
@@ -244,7 +254,7 @@ margin:0 auto;
 
   .screen {
     position: relative !important;
-    top: 0 !important;
+    top: -220 !important;
     left: 0 !important;
     width: 100% !important;
     height: auto !important;
