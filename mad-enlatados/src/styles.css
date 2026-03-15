@@ -18,6 +18,14 @@ body{
   display:block;
 }
 
+@media (max-width: 768px) {
+  .hero-img {
+    min-height: 79vh; 
+    object-fit: cover; 
+    object-position: center; 
+  }
+}
+
 
 .wall{
 
