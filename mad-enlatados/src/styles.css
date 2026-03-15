@@ -106,6 +106,18 @@ line-height:1.8;
 
 }
 
+@media (max-width:768px){
+
+.manifesto{
+  width:100%;
+}
+
+.manifesto p{
+  font-size:8px;
+  line-height:1.4;
+  margin-bottom:5px;
+}
+
 .manifesto p{
 
 margin-bottom:30px;
