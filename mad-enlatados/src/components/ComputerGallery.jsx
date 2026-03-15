@@ -6,26 +6,26 @@ export default function ComputerGallery(){
 
   const images = {
     colecao:[
-      "/gallery/1.png",
-      "/gallery/2.png",
-      "/gallery/3.png",
-      "/gallery/4.png",
-      "/gallery/4.png",
-      "/gallery/4.png",
+      "/images/1.png",
+      "/images/2.png",
+      "/images/3.png",
+      "/images/4.png",
+      "/images//4.png",
+      "/images/4.png",
     ],
 
     voces:[
-      "/gallery/5.webp",
-      "/gallery/6.webp",
-      "/gallery/7.webp",
-      "/gallery/8.webp"
+      "/images/5.webp",
+      "/images/6.webp",
+      "/images/7.webp",
+      "/images/8.webp"
     ],
 
     arquivos:[
-      "/gallery/9.webp",
-      "/gallery/10.webp",
-      "/gallery/11.webp",
-      "/gallery/12.webp"
+      "/images/9.webp",
+      "/images/10.webp",
+      "/images/11.webp",
+      "/images/12.webp"
     ]
   }
 
